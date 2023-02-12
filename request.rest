@@ -2,16 +2,5 @@
 GET http://localhost:5050/products
 
 ###
-// POST product create new
-POST http://localhost:5050/products
-Content-Type: application/json
-
-{
-  "title" : "Product 1",
-}
-
-Content-Type: image/jpeg
-
-{
-  "file" : "../public/images/image1.jpg"
-}
+// Delete product list id
+DELETE http://localhost:5050/products/2
