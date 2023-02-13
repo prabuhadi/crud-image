@@ -95,7 +95,7 @@ export const updateProduct = async (req, res) => {
     );
     res.status(200).json({ msg: "Product Updated Successfuly" });
   } catch (error) {
-    console.log(error.message);
+    res.status(400).json({ msg: error.message });
   }
 };
 
@@ -117,6 +117,6 @@ export const deleteProduct = async (req, res) => {
     });
     res.status(200).json({ msg: "Product Deleted Successfuly" });
   } catch (error) {
-    console.log(error.message);
+    res.status(400).json({ msg: error.message });
   }
 };
